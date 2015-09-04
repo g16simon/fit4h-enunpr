@@ -1,0 +1,5 @@
+Ruby-Console
+	irb auf der Konsole eingegeben startet eine Eingabeaufforderung,
+	die alle Ruby-Befehle kennt
+
+	
