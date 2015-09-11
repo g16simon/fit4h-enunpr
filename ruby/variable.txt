@@ -6,6 +6,11 @@ Zeichenkette (String):
 		Ein String erzeugt, in dem eine beliebige Anzahl von Zeichen(Zahlen, Buchstaben)
 		innerhalb von Anführungszeichen (sowohl 'einfache' als "doppelte") steht.
 
+Zusammengesetzte Zeichenkette:
+		tag = "Freitag"
+		str = "Heute ist " + tag
+			#das + Zeichen verbindet zwei Strings
+
 Ganze Zahl (Integer, Fixnum):
 		Zahl = 15
 

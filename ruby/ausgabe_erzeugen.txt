@@ -15,5 +15,9 @@ Zusammengesetzte Ausgabe:
 
 Formatieren der Ausgabe:
 	puts "Die Woche besteht aus:\n\tMontag\n\tFreitag"
-	# \n fügt einen Zeilenumbruch hinzu
-	# \t fügt einen Tabulatorschritt hinzu
+	# \n fügt einen Zeilenumbruch hinzu (new line)
+	# \t fügt einen Tabulatorschritt hinzu (new tab)
+
+Zeichen escapen
+	# \" fügt ein "doppeltes Anführungszeichen" ein
+	# \\ fügt einen \ ein
