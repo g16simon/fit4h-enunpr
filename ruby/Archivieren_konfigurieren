@@ -1,0 +1,20 @@
+1. Archivieren
+	Beim Archivieren werden verschiedene Quellen (Dateien) sequentielle in einen Datenstrom geschrieben.
+	Der Sinn liegt in der Sicherng von Daten, etwa auf einem Magnetband.
+	Es gibt drei Modi:
+		Erzeugen eines Archivs (Schalter: -c)
+		Inhalt eines Archivs anzueignen (-t)
+		Entpacken eines Archivs (-x)
+
+	Archiv erzeugen
+		tar -cf <archivname.tar> <dateinamen>
+		tar -cf <archivname.tar> <ordnernamen>
+		tar -czf <archivname.tar.gz> <ordnername>
+			#es wird ein Archiv erzeugt und komprimiert
+
+	Archiv anzeigen
+		less <archivname>
+		tar -tvf <archivname>
+		
+
+2.Komprimieren

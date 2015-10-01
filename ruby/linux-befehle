@@ -1,0 +1,24 @@
+whoami - Benutzername
+hostname - computername
+echo - einfache ausgabe
+echo * - gibt alle Datei und Ordnernamen im aktuellen Verzeichnis aus
+echo D* - gibt alle Dateien Ordner deren Name mit D beginnt aus im aktuellen Verzeichnis
+echo *s - alles was mit s endet
+echo D*n*s
+echo ???? - alles was aus 4 Buchstaben besteht
+echo D?????
+echo ?????*s
+echo [DP]* - alles was mit D oder P beginnt
+echo [!DP]* - alles was NICHT mit D oder P beginnt
+echo [D-P]* - alles was mit einem Buchstaben von D..E..F -> ..P beginnt
+echo [!D-P]*
+echo `date` - er gibt das Datum aus, ohne `` gibt er nur das Wort date aus!
+echo $(date) - funktiert nicht ohne echo
+echo This is the command '`date`' - gibt das wort `date` aus, ohne die date-Funktion auszuführen
+echo This is the command "`date`" - "" hat keinen Einfluss auf ``, die date-Funktion wird trotzdem ausgeführt
+echo "D*" - gibt nur D* aus
+echo Hello; echo Linux; echo Student - trennt die Befehle und führt sie nacheinander in einer neuen Zeile aus
+false; echo Not; echo Conditional - die Befehle werden ausgeführt, egal ob einer nicht funktioniert
+echo Success && false && echo Bye - Befehle sind verbunden, sobald ein Fehler auftaucht hört er an dieser Stelle auf
+history 7 - zeigt die letzten 7 Befehle an
+!12 - führt den 12ten Befehl der history aus

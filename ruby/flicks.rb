@@ -1,46 +1,59 @@
+class Playlist
+def initialize(name)
+	@name = name
+	@movies = []
+end
+def add_movie(movie)
+	@movies << movie
+end
+def play
+		puts "#{@name}'s PLAYLIST"
+		@movies.each do |movie|
+			puts movie
+		end
+	end
+def to_s #to_s gehört zur Klasse Playlist
+	 @movies.size.to_s #to_s gehört nicht zur Klasse Playlist
+end
+end
 class Movie
+	attr_accessor :title
 	def initialize(ptitle, prank=0)
 		@title = ptitle.capitalize
 		@rank = prank
 	end
-
-	#def title=(ptitle)
-	#	@title = ptitle
-	#end
-	attr_writer :title
-
 	def thumbs_up
 		@rank += 1
-		#@rank = @rank + 1
 	end
-
 	def thumbs_down
 		@rank -= 1
 	end
-
+	
 	def to_s
 		"#{@title} hat ein Ranking von: #{@rank}."
 	end
-
 end
 
-obj_movie1 = Movie.new('Ninja Turtles',4)
-puts obj_movie1.to_s
-obj_movie1.thumbs_up
-puts obj_movie1.to_s
-obj_movie1.thumbs_down
-puts obj_movie1.to_s
+movie1 = Movie.new('Ninja Turtles',4)
+movie2 = Movie.new('45 years',8)
+movie3 = Movie.new('8mm',10)
+pl = Playlist.new("Theo")
+pl.add_movie(movie1)
+pl.add_movie(movie2)
+puts pl
+pl.play
 
-obj_movie1.thumbs_up
-puts obj_movie1.to_s
-obj_movie1.thumbs_up
-puts obj_movie1.to_s
-obj_movie1.thumbs_up
-puts obj_movie1.to_s
 
-puts obj_movie1.title
-obj_movie1.title = "NinjaPurples"
-puts obj_movie1
+
+#movies = [movie1,movie2,movie3]
+#movies.each do |movie|
+#	movie.thumbs_up
+#	movie.thumbs_up
+#	puts movie
+#end
+
+
+
 
 # 999999.times do 
 # 	obj_movie1.thumbs_down
