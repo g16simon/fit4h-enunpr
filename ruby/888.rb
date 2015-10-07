@@ -185,3 +185,16 @@ end
 # str_2 = "Fussball, Bier, Programmieren"
 # Die Ausgabe lautet:
 # ergebnis = { :diff => ["Federball", "Whisky", "Fussball", "Bier"], :match => ["Programmieren"]}
+
+str_1 = "Programmieren, Federball, Whisky, Bier"
+str_2 = "Fussball, Bier, Programmieren"
+str1 = str_1.scan(/\w+/)
+["Programmieren", "Federball", "Whisky", "Bier"]
+str2 = str_2.scan(/\w+/)
+["Fussball", "Bier", "Programmieren"]
+zwil = []
+str1.size.times do |i|
+zwi = str1[i]
+zwil << str_2[zwi]
+end
+puts "ergebnis = { :diff => #{(str1 - str2) + (str2 - str1)}, :match => #{zwil.compact}"
